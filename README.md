@@ -16,3 +16,5 @@ This repos extends [hello-react](https://github.com/codesheepio/hello-react) whi
 * `git checkout 7-map-state-to-props`
 * `git checkout 8-map-dispatch-to-props`
 * `git checkout 9-pass-store-with-provider`
+* `git checkout 10-enable-hot-reload`
+* `git checkout 11-enable-redux-devtools` and install [Redux DevTools Chrome extension](https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd)
