@@ -1,6 +1,8 @@
 # hello-redux
 A repository used in react/redux training bootcamp. It shows how to use redux with react.
 
+This repos extends [hello-react](https://github.com/codesheepio/hello-react) which uses internal state to make a counter.
+
 ## Step by step
 * `npm install` - Install dependency
 * `git checkout 1-create-addcounter-acton` 
