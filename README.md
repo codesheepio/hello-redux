@@ -12,7 +12,6 @@ This repos extends [hello-react](https://github.com/codesheepio/hello-react) whi
 * `git checkout 5-change-to-functional-stateless-component`
 * `git checkout 6-simplify-component`
 * `git checkout 7-map-state-to-props`
+* `git checkout 8-map-dispatch-to-props`
 
-&rarr;  `git checkout 8-map-dispatch-to-props`
-
-* `git checkout 9-pass-store-with-provider`
+&rarr; `git checkout 9-pass-store-with-provider`
