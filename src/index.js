@@ -1,9 +1,16 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import Counter from './components/Counter'
+import { createStore } from 'redux'
+import { Provider } from 'react-redux'
+import Counter from './containers/Counter'
+import rootReducer from './reducers'
 import './style.css'
 
+const store = createStore(rootReducer)
+
 ReactDOM.render(
-  <Counter label="I'm a counter" />,
+  <Provider store={store}>
+    <Counter label="I'm a counter" />
+  </Provider>,
   document.getElementById('react-root')
 )
