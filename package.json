@@ -6,7 +6,7 @@
   "scripts": {
     "build": "babel -d dist src",
     "start": "node dist/index.js",
-    "dev": "webpack-dev-server --inline",
+    "dev": "webpack-dev-server --inline --hot",
     "webpack": "webpack",
     "webpack:watch": "webpack --watch"
   },

@@ -8,6 +8,14 @@ import './style.css'
 
 const store = createStore(rootReducer)
 
+if (module.hot) {
+  module.hot.accept('./reducers', () => {
+    const nextRootReducer = require('./reducers').default
+
+    store.replaceReducer(nextRootReducer)
+  })
+}
+
 ReactDOM.render(
   <Provider store={store}>
     <Counter label="I'm a counter" />
