@@ -6,7 +6,7 @@ import Counter from './containers/Counter'
 import rootReducer from './reducers'
 import './style.css'
 
-const store = createStore(rootReducer)
+const store = createStore(rootReducer, window.devToolsExtension && window.devToolsExtension())
 
 if (module.hot) {
   module.hot.accept('./reducers', () => {
