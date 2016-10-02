@@ -1,8 +1,13 @@
 import { connect } from 'react-redux'
 import Counter from '../components/Counter'
+import { addCounter } from '../actions/counter'
 
 const mapStateToProps = (state) => ({
   counter: state.counter,
 })
 
-export default connect(mapStateToProps)(Counter)
+const mapDispatchToProps = (dispatch) => ({
+  addCounter: () => dispatch(addCounter()),
+})
+
+export default connect(mapStateToProps, mapDispatchToProps)(Counter)
