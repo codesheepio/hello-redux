@@ -1,4 +1,5 @@
-var path = require('path')
+const path = require('path')
+
 module.exports = {
   entry: path.resolve('src/index.js'),
   output: {
@@ -7,14 +8,14 @@ module.exports = {
     publicPath: '/dist/',
   },
   module: {
-    loaders: [
+    rules: [
       {
         test: /\.js$/,
-        loader: 'babel',
+        use: 'babel-loader',
       },
       {
         test: /\.css$/,
-        loader: 'style!css',
+        use: ['style-loader', 'css-loader'],
       }
     ],
   }
